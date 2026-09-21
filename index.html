@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jacob Sewell | History & Leadership</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cream: #f8f4ec;
+            --cream-dark: #eee7da;
+            --brown: #4b3528;
+            --brown-light: #705746;
+            --gold: #b58a4a;
+            --gold-light: #d4b477;
+            --green: #425447;
+            --text: #29251f;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(65, 45, 30, 0.10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Libre Baskerville", serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(248, 244, 236, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(75, 53, 40, 0.12);
+        }
+
+        .nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "Libre Baskerville", serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--brown);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--brown-light);
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(
+                    rgba(248, 244, 236, 0.84),
+                    rgba(248, 244, 236, 0.94)
+                ),
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(181, 138, 74, 0.22),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 10% 90%,
+                    rgba(66, 84, 71, 0.12),
+                    transparent 30%
+                );
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border: 1px solid rgba(181, 138, 74, 0.25);
+            border-radius: 50%;
+            right: -170px;
+            top: 100px;
+        }
+
+        .hero-content {
+            max-width: 1150px;
+            width: 100%;
+            margin: auto;
+            padding: 80px 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 5.7rem);
+            line-height: 1.05;
+            max-width: 800px;
+            color: var(--brown);
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-description {
+            max-width: 670px;
+            font-size: 1.15rem;
+            color: var(--brown-light);
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: 0.25s;
+        }
+
+        .button-primary {
+            background: var(--brown);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: var(--green);
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            border: 1px solid var(--brown);
+            color: var(--brown);
+        }
+
+        .button-secondary:hover {
+            background: var(--brown);
+            color: white;
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 25px;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-heading {
+            margin-bottom: 45px;
+        }
+
+        .section-heading small {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .section-heading h2 {
+            font-size: 2.4rem;
+            color: var(--brown);
+            margin-top: 8px;
+        }
+
+        .section-heading p {
+            max-width: 650px;
+            margin-top: 12px;
+            color: var(--brown-light);
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: #51483f;
+        }
+
+        .about-card {
+            background: var(--cream);
+            padding: 35px;
+            border-left: 4px solid var(--gold);
+            box-shadow: var(--shadow);
+        }
+
+        .about-card h3 {
+            color: var(--brown);
+            margin-bottom: 20px;
+        }
+
+        .about-card div {
+            margin-bottom: 17px;
+        }
+
+        .about-card strong {
+            display: block;
+            color: var(--brown);
+        }
+
+        .about-card span {
+            color: var(--brown-light);
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           HISTORY
+        ========================= */
+
+        .history {
+            background: var(--cream);
+        }
+
+        .history-box {
+            max-width: 850px;
+            border-left: 3px solid var(--gold);
+            padding-left: 35px;
+        }
+
+        .history-box h3 {
+            color: var(--brown);
+            font-size: 1.45rem;
+            margin-bottom: 12px;
+        }
+
+        .history-box p {
+            color: var(--brown-light);
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-family: "Libre Baskerville", serif;
+            font-size: 1.3rem;
+            color: var(--brown);
+            padding: 20px 0;
+        }
+
+        /* =========================
+           LEADERSHIP
+        ========================= */
+
+        .leadership {
+            background: var(--white);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            background: var(--cream);
+            border: 1px solid rgba(75, 53, 40, 0.10);
+            transition: 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .card-number {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: var(--brown);
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: var(--brown-light);
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .projects {
+            background: var(--green);
+            color: white;
+        }
+
+        .projects .section-heading small {
+            color: var(--gold-light);
+        }
+
+        .projects .section-heading h2 {
+            color: white;
+        }
+
+        .projects .section-heading p {
+            color: rgba(255,255,255,0.75);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.14);
+            padding: 30px;
+            min-height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.25s;
+        }
+
+        .project:hover {
+            background: rgba(255,255,255,0.13);
+            transform: translateY(-5px);
+        }
+
+        .project-label {
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: var(--gold-light);
+            font-weight: 700;
+        }
+
+        .project h3 {
+            color: white;
+            margin: 12px 0;
+        }
+
+        .project p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.92rem;
+        }
+
+        .project-link {
+            margin-top: 25px;
+            color: var(--gold-light);
+            font-weight: 700;
+        }
+
+        .project-link:hover {
+            color: white;
+        }
+
+        /* =========================
+           COMMUNITY SERVICE
+        ========================= */
+
+        .service {
+            background: var(--cream);
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .service-item {
+            padding: 22px;
+            background: white;
+            border: 1px solid rgba(75,53,40,0.08);
+        }
+
+        .service-item h3 {
+            font-size: 1.05rem;
+            color: var(--brown);
+            margin-bottom: 5px;
+        }
+
+        .service-item p {
+            font-size: 0.92rem;
+            color: var(--brown-light);
+        }
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            background: var(--white);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            padding: 9px 15px;
+            border: 1px solid rgba(75,53,40,0.18);
+            border-radius: 30px;
+            color: var(--brown);
+            font-size: 0.9rem;
+            background: var(--cream);
+        }
+
+        /* =========================
+           REFERENCES
+        ========================= */
+
+        .references {
+            background: var(--cream);
+        }
+
+        .reference-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .reference {
+            background: white;
+            padding: 30px;
+            border-top: 3px solid var(--gold);
+        }
+
+        .reference h3 {
+            color: var(--brown);
+            margin-bottom: 5px;
+        }
+
+        .reference p {
+            color: var(--brown-light);
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: var(--brown);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: rgba(255,255,255,0.75);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: var(--gold);
+            color: white;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+
+        .contact-button:hover {
+            background: var(--gold-light);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #35251c;
+            color: rgba(255,255,255,0.65);
+            text-align: center;
+            padding: 25px;
+            font-size: 0.85rem;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards,
+            .project-grid,
+            .service-list,
+            .reference-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <header>
+        <nav class="nav">
+
+            <a href="#home" class="logo">
+                Jacob Sewell
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Student • Leader • Historian
+            </div>
+
+            <h1>
+                Learning from the past,
+                <span>building the future.</span>
+            </h1>
+
+            <p class="hero-description">
+                I am Jacob Sewell, a senior at McCreary Central High School
+                interested in Early American History, historical research,
+                leadership, and serving my community.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="button button-primary">
+                    Learn About Me
+                </a>
+
+                <a href="#projects" class="button button-secondary">
+                    View My Projects
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <small>About Me</small>
+                <h2>A student with a passion for history.</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        My name is Jacob Sewell, and I am a senior at
+                        McCreary Central High School with a 3.83 weighted GPA.
+                    </p>
+
+                    <p>
+                        I have always been interested in history, especially
+                        Early American History. A dual-credit history course
+                        through Eastern Kentucky University helped strengthen
+                        that interest and inspired me to pursue history at
+                        the college level.
+                    </p>
+
+                    <p>
+                        Outside of academics, I enjoy leadership, technology,
+                        and community service. Through TSA, school technology
+                        projects, church, and volunteer work, I have had the
+                        opportunity to work with others and contribute to my
+                        community.
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <h3>At a Glance</h3>
+
+                    <div>
+                        <strong>Education</strong>
+                        <span>McCreary Central High School</span>
+                    </div>
+
+                    <div>
+                        <strong>GPA</strong>
+                        <span>3.83 Weighted</span>
+                    </div>
+
+                    <div>
+                        <strong>College Goal</strong>
+                        <span>Berea College</span>
+                    </div>
+
+                    <div>
+                        <strong>Intended Major</strong>
+                        <span>History</span>
+                    </div>
+
+                    <div>
+                        <strong>Primary Interest</strong>
+                        <span>Early American History</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HISTORY
+    ========================= -->
+
+    <section class="history" id="history">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <small>Academic Interest</small>
+                <h2>Why History?</h2>
+            </div>
+
+            <div class="history-box">
+
+                <h3>Early American History</h3>
+
+                <p>
+                    My interest in history began at a young age and has
+                    continued to grow throughout my education. I am especially
+                    interested in Early American History and the people,
+                    ideas, events, and conflicts that shaped the United States.
+                </p>
+
+                <p>
+                    As an elementary school student, I was selected to
+                    participate in a meeting with state legislators, giving me
+                    an early opportunity to engage with government and civic
+                    affairs.
+                </p>
+
+                <p>
+                    Later, a dual-credit history course through Eastern
+                    Kentucky University with Mr. Joe Waters strengthened my
+                    interest in historical research and encouraged me to
+                    consider studying history in college.
+                </p>
+
+                <div class="quote">
+                    “Understanding where we came from helps us better
+                    understand where we are going.”
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LEADERSHIP
+    ========================= -->
+
+    <section class="leadership" id="leadership">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <small>Leadership & Experience</small>
+                <h2>Learning by doing.</h2>
+
+                <p>
+                    My experiences in technology and student organizations
+                    have taught me how to lead teams, solve problems, and
+                    turn ideas into projects that serve others.
+                </p>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>Fiscal Court Web Design</h3>
+
+                    <p>
+                        Founded and led a student team in developing an
+                        accessible county website while collaborating with
+                        local government to provide community resources
+                        and tourism information.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>TSA Web Development</h3>
+
+                    <p>
+                        Led a TSA Web Development and Design team to a
+                        Top 10 finish at the Kentucky State Competition
+                        while mentoring new members.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>Information Support Services</h3>
+
+                    <p>
+                        Selected as an Information Support Services intern,
+                        assisting students and staff while developing a
+                        technology ticketing system and troubleshooting
+                        resource.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <h3>Community Leadership</h3>
+
+                    <p>
+                        Participate in church and community service,
+                        lead young adult discussion sessions, and assist
+                        community members with daily needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================= -->
+
+    <section class="projects" id="projects">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <small>Selected Work</small>
+
+                <h2>Projects</h2>
+
+                <p>
+                    A collection of projects that demonstrate my interests
+                    in technology, leadership, research, and community
+                    involvement.
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+                <!-- PROJECT 1 -->
+
+                <div class="project">
+
+                    <div>
+
+                        <div class="project-label">
+                            Community Project
+                        </div>
+
+                        <h3>
+                            McCreary County Fiscal Court Website
+                        </h3>
+
+                        <p>
+                            A student-led website project designed to make
+                            county information, resources, government
+                            services, and tourism information easier for
+                            residents to access.
+                        </p>
+
+                    </div>
+
+                    <!-- CHANGE THIS LINK -->
+
+                    <a
+                        href="https://mccrearygov.com"
+                        target="_blank"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div class="project">
+
+                    <div>
+
+                        <div class="project-label">
+                            TSA
+                        </div>
+
+                        <h3>
+                            Web Development & Design
+                        </h3>
+
+                        <p>
+                            A competitive web development project created
+                            through the Technology Student Association.
+                        </p>
+
+                    </div>
+
+                    <!-- CHANGE THIS LINK -->
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+
+                <div class="project">
+
+                    <div>
+
+                        <div class="project-label">
+                            Information Technology
+                        </div>
+
+                        <h3>
+                            Student Technology Help Desk
+                        </h3>
+
+                        <p>
+                            A student-developed ticketing and troubleshooting
+                            system created to help school staff report and
+                            resolve technology issues more efficiently.
+                        </p>
+
+                    </div>
+
+                    <!-- CHANGE THIS LINK -->
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+
+                <div class="project">
+
+                    <div>
+
+                        <div class="project-label">
+                            Research
+                        </div>
+
+                        <h3>
+                            Historical Research
+                        </h3>
+
+                        <p>
+                            A space to showcase future research, papers,
+                            presentations, and projects related to Early
+                            American History.
+                        </p>
+
+                    </div>
+
+                    <!-- CHANGE THIS LINK -->
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+
+                <div class="project">
+
+                    <div>
+
+                        <div class="project-label">
+                            TSA
+                        </div>
+
+                        <h3>
+                            Technology Projects
+                        </h3>
+
+                        <p>
+                            A collection of technology, design, and
+                            competition projects completed through TSA.
+                        </p>
+
+                    </div>
+
+                    <!-- CHANGE THIS LINK -->
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 6 -->
+
+                <div class="project">
+
+                    <div>
+
+                        <div class="project-label">
+                            Future Work
+                        </div>
+
+                        <h3>
+                            More Projects
+                        </h3>
+
+                        <p>
+                            Future academic, community, historical research,
+                            and technology projects will be added here.
+                        </p>
+
+                    </div>
+
+                    <!-- CHANGE THIS LINK -->
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COMMUNITY SERVICE
+    ========================= -->
+
+    <section class="service" id="service">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <small>Community</small>
+
+                <h2>Serving Others</h2>
+
+                <p>
+                    Community involvement has been an important part of my
+                    high school experience.
+                </p>
+
+            </div>
+
+
+            <div class="service-list">
+
+                <div class="service-item">
+
+                    <h3>Church Camp Volunteer</h3>
+
+                    <p>
+                        Assist with summer church camp activities and
+                        support younger students.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <h3>Young Adult Leadership</h3>
+
+                    <p>
+                        Lead “Open Windows” sessions focused on applying
+                        Scripture and reflection to everyday challenges.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <h3>Community Assistance</h3>
+
+                    <p>
+                        Assist neighbors who have disabilities with daily
+                        needs, including grocery trips and errands.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <h3>Community Cleanup</h3>
+
+                    <p>
+                        Participate in roadside cleanup projects to help
+                        improve the local community.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
+    <section class="skills">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <small>Skills</small>
+
+                <h2>What I Bring</h2>
+
+            </div>
+
+            <div class="skill-list">
+
+                <div class="skill">Historical Research</div>
+                <div class="skill">Leadership</div>
+                <div class="skill">Project Management</div>
+                <div class="skill">Public Speaking</div>
+                <div class="skill">Writing</div>
+                <div class="skill">Community Engagement</div>
+                <div class="skill">Web Design</div>
+                <div class="skill">Technology Support</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Teamwork</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REFERENCES
+    ========================= -->
+
+    <section class="references">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <small>References</small>
+
+                <h2>People Who Have Guided Me</h2>
+
+            </div>
+
+            <div class="reference-grid">
+
+                <div class="reference">
+
+                    <h3>Joe Waters</h3>
+
+                    <p>
+                        History Professor<br>
+                        Eastern Kentucky University
+                    </p>
+
+                </div>
+
+
+                <div class="reference">
+
+                    <h3>Collin Crabtree</h3>
+
+                    <p>
+                        Information Support Services Instructor<br>
+                        McCreary Central High School
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-container">
+
+            <h2>Thank You for Visiting</h2>
+
+            <p>
+                Thank you for taking the time to learn more about me,
+                my interests, and the work I have completed throughout
+                high school.
+            </p>
+
+            <!-- Replace with Jacob's email -->
+
+            <a
+                href="mailto:YOUR-EMAIL@example.com"
+                class="contact-button"
+            >
+                Get in Touch
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        © 2026 Jacob Sewell · McCreary Central High School
+
+    </footer>
+
+</body>
+</html>
